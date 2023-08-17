@@ -1,11 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/responsiveSM.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  </head>
+  <body>
+    <a href="https://api.whatsapp.com/send/?phone=%2B573115250822&text&type=phone_number&app_absent=0" class="btn-wsp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    <header id="header">
+      <img src="/assets/img/Metaestate logo para fondo oscuro.png" alt="" srcset="">
+      <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-filter-left"></i></button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">...</div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="filtros">
+        <button class="boton">METAVERSE</button>
+        <button class="boton">RENDERS</button>
+        <button class="boton">E-COMERCE</button>
+      </div>
+      <div class="row">
+        <h2 class="mb-4">Servicios</h2>
+        <div class="servicios">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <div class="video" data-bs-toggle="modal" data-bs-target="#servi1">
+                <video class="thevideo" loop mb-0 muted preload="auto">
+                  <source src="assets\video\explora.mp4" type="video/mp4" />
+                </video>
+                <div class="conten">
+                    <h5>Explora</h5>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="servi1" tabindex="-1" aria-labelledby="#servi1Label" aria-hidden="true">
+              <div class="conmodal">
+                <div class="card">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <video class="" loop autoplay preload="auto" muted>
+                        <source src="assets\video\explora.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="container">
+                        <h1>Explora</h1>
+                        <hr size="3px" color="#82B8FF" noshade>
+                        <p>"Sumérgete en un viaje virtual a través del metaverso y descubre propiedades únicas. ¡Explora un nuevo mundo de bienes inmuebles con tecnología de vanguardia!"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-dialog" style="display: none"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <div class="video" data-bs-toggle="modal" data-bs-target="#servi2">
+                <video class="thevideo" loop mb-0 muted preload="auto">
+                  <source src="assets\video\interactua.mp4" type="video/mp4" />
+                </video>
+                <div class="conten">
+                    <h5>Interactua</h5>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="servi2" tabindex="-1" aria-labelledby="#servi1Label" aria-hidden="true">
+              <div class="conmodal">
+                <div class="card">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <video class="" loop autoplay preload="auto" muted>
+                        <source src="assets\video\interactua.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="container">
+                        <h1>Interactua</h1>
+                        <hr size="3px" color="#82B8FF" noshade>
+                        <p>"Conéctate en el metaverso inmobiliario: ¡Explora propiedades, interactúa con entornos virtuales y encuentra tu hogar ideal en un mundo digitalmente cautivador! ¡Tu nuevo hogar te espera!"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-dialog" style="display: none"></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <div class="video" data-bs-toggle="modal" data-bs-target="#servi3">
+                <video class="thevideo" loop mb-0 muted preload="auto">
+                  <source src="assets\video\personaliza.mp4" type="video/mp4" />
+                </video>
+                <div class="conten">
+                    <h5>Personaliza</h5>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="servi3" tabindex="-1" aria-labelledby="#servi1Label" aria-hidden="true">
+                <div class="conmodal">
+                  <div class="card">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <video class="" loop autoplay preload="auto" muted>
+                          <source src="assets\video\personaliza.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="container">
+                          <h1>Personaliza</h1>
+                          <hr size="3px" color="#82B8FF" noshade>
+                          <p>"Personaliza tu espacio soñado en el metaverso inmobiliario. Diseña, adapta y hazlo tuyo. ¡Explora infinitas posibilidades para crear el hogar perfecto en un mundo virtualmente real!"</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-dialog" style="display: none"></div>
+                </div>
+              </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+                <div class="video" data-bs-toggle="modal" data-bs-target="#servi4">
+                    <video class="thevideo" loop mb-0 muted preload="auto">
+                      <source src="assets\video\compra.mp4" type="video/mp4" />
+                    </video>
+                    <div class="conten">
+                        <h5>Compra</h5>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal fade" id="servi4" tabindex="-1" aria-labelledby="#servi1Label" aria-hidden="true">
+                <div class="conmodal">
+                  <div class="card">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <video class="" loop autoplay preload="auto" muted>
+                          <source src="assets\video\compra.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="container">
+                          <h1>Compra</h1>
+                          <hr size="3px" color="#82B8FF" noshade>
+                          <p>"Desde lo digital hasta tu hogar: Descubre muebles en escenarios virtuales del metaverso inmobiliario. Crea un oasis único fusionando estilo y entorno en 3D. ¡Explora y personaliza ahora!"</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-dialog" style="display: none"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seccion2">
+      <div class="row">
+        <h2>casos de exito</h2>
+        <div class="servicios">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\pureblink-1920x1080-e787bddebaa5.webp" alt="" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\unreal-engine-feed-3-1920x1080-bfec965a7b72.webp" alt="" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\spotlight-imerza-blog-body-image-6-1640x1000-242019902.webp" alt="" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\buildmedia-balcony-1913x1076-44284fb2e62f.webp" alt="" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\zipview-1920x1080-b1da183a2840.webp" alt="" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+              <img src="assets\img\estudio\aedas-homes-1920x1080-9c6c5f7e9ca6.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seccion3">
+      <div class="row">
+        <h2>casos de estudio</h2>
+        <div class="servicios">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <img src="assets\img\exito\buildmedia-balcony2-1920x1080-110d687c9d11.webp" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <img src="assets\img\exito\unreal-engine-future-of-homes-header-1920x1080-58aee2bd82cf.webp" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <img src="assets\img\exito\pulse-s02e01-re-block-1920x1080-1920x1080-976e85934b4e.avif" alt="" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10">
+              <img src="assets\img\exito\v2i-1920x1080-b81bf2c9c1e7.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="row">
+        <h2>contactanos</h2>
+        <div class="servicios">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"><i class="bi bi-linkedin"></i></div>
+                
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"><i class="bi bi-instagram"></i></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"><i class="bi bi-whatsapp"></i></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"> <i class="bi bi-telegram"></i></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"><i class="bi bi-envelope"></i></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-10">
+                <div class="social"><i class="bi bi-twitter"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer-legal text-center">
+        <div class=" pt-0 pb-0 p-5 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Metaestate</span></strong
+              >. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              By <a href="https://blockfy.app/">Blockfy SAS - Colombia</a>
+            </div>
+          </div>
+
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>
