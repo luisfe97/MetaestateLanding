@@ -1,0 +1,446 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  background-image: url("../img/Fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 80px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    font: 30px;
+    box-shadow: 0 1  10 rgba(0,0,0,0.3);
+    z-index: 100;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+.btn-wsp:hover{
+    opacity:1;
+}
+body::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+}
+body::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+body input,
+body h1,
+body h3,
+body a,
+body span {
+  color: #5a5a5a;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+section {
+  padding: 0% 7%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  padding: 5% 5%;
+  margin-top: 7%;
+}
+header img {
+  width: 600px;
+}
+header span {
+  font-size: 50px;
+  font-weight: 500;
+  color: #82b8ff;
+}
+
+header .boton {
+  margin-top: 30px;
+  border-radius: 50px;
+  width: 100px;
+  padding: 2px;
+  height: fit-content;
+  background: #cccccc41;
+  color: white;
+  font-size: 25px;
+  border: none;
+}
+.boton {
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  padding: 2px 21px;
+  cursor: pointer;
+  color: white;
+}
+.boton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+p {
+  color: white;
+}
+#hero .filtros {
+  margin-bottom: 10%;
+}
+#hero {
+  margin-top: 5%;
+  color: white;
+}
+#hero h2 {
+  font-size: 20px;
+}
+#hero .servicios img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+#hero .servicios img:hover {
+  transform: translateY(-5px);
+}
+.conmodal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
+.conmodal button {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+}
+.thevideo {
+  position: relative;
+  height: 200px !important;
+  width: 100% !important;
+  margin-bottom: 50px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 250ms;
+}
+.video {
+  position: relative;
+}
+.video::after {
+  width: 100% !important;
+  height: 200px !important;
+  content: " ";
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.575) 58%, rgba(0, 0, 0, 0.808) 98%);
+  inset: 0;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  cursor: none;
+  border-radius: 10px;
+  transition: transform 250ms;
+}
+.conten {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  transition: transform 250ms;
+  z-index: 4;
+}
+.conten h5 {
+  font-size: 35px !important;
+}
+.video:hover {
+  transform: scale(1.03);
+}
+.video:hover .conten {
+  transform: translateY(-15px) scale(1.1);
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+  display: none !important;
+}
+.card {
+  position: relative;
+  background: #1e1e1ea6 !important;
+  border-radius: 30px !important;
+}
+.conmodal video {
+  width: 100%;
+  height: 500px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px !important;
+}
+.container {
+  padding: 20%;
+  color: white !important;
+}
+.container h1 {
+  color: white !important;
+}
+hr {
+  width: 10%;
+  border: none !important;
+  opacity: 1 !important;
+}
+#seccion2 {
+  margin-top: 5%;
+  color: white;
+}
+#seccion2 h2 {
+  font-size: 20px;
+}
+#seccion2 .servicios img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+#seccion2 .servicios img:hover {
+  transform: translateY(-5px);
+}
+
+#seccion3 {
+  margin-top: 5%;
+  color: white;
+}
+#seccion3 h2 {
+  font-size: 20px;
+}
+#seccion3 .servicios img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+#seccion3 .servicios img:hover {
+  transform: translateY(-5px);
+}
+
+#contacto {
+  margin-top: 5%;
+  color: white;
+}
+#contacto .social {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  font-size: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5a5a5a3a;
+}
+#contacto .social:hover {
+    transform: translateY(-5px);
+  }
+
+.footer {
+  margin-top: 3%;
+  color: white;
+  font-size: 14px;
+}
+.footer span {
+    margin-top: 3%;
+    color: #82b8ff;
+    font-size: 14px;
+  }
+
+.footer .footer-content {
+  background: #82b8ff;
+  padding: 60px 0 30px 0;
+}
+
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .footer-content .footer-info h3 span {
+  color: #82b8ff;
+}
+
+.footer .footer-content .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: white;
+  color: white;
+}
+
+.footer .footer-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #82b8ff;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .footer-content .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-content .footer-links ul i {
+  padding-right: 2px;
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-content .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-content .footer-links ul a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-content .footer-links ul a:hover {
+  color: white;
+}
+
+.footer .footer-content .footer-newsletter form {
+  margin-top: 30px;
+  background: white;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.footer .footer-content .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+.footer .footer-content .footer-newsletter form input[type="email"]:focus-visible {
+  outline: none;
+}
+
+.footer .footer-content .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #82b8ff;
+  color: white;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+.footer .footer-content .footer-newsletter form input[type="submit"]:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.footer .footer-legal {
+  padding: 30px 0;
+  background: black;
+}
+
+.footer .footer-legal .credits {
+  padding-top: 4px;
+  font-size: 13px;
+  color: white;
+}
+
+.footer .footer-legal .credits a {
+  color: #82b8ff;
+}
+
+.footer .footer-legal .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgb(255, 255, 255, 0.1);
+  color: white;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .footer-legal .social-links a:hover {
+  background: #82b8ff;
+  text-decoration: none;
+}

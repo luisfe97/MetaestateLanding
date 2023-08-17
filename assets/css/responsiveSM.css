@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    header img {
+        width: 200px;
+        height: fit-content;
+      }
+      header .boton {
+        margin-top: 0px;
+        border-radius: 50px;
+        width: 100px;
+        padding: 2px;
+        height: fit-content;
+        background: #cccccc41;
+        color: white;
+        font-size: 25px;
+        border: none;
+      }
+}
