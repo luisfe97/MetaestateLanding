@@ -15,24 +15,3 @@
         border: none;
       }
 }
-
-
-@media  (min-width: 1242px) {
-  body{
-    height: 100vh
-  }
-  header img {
-      width: 600px;
-    }
-    header .boton {
-      margin-top: 0px;
-      border-radius: 50px;
-      width: 100px;
-      padding: 2px;
-      height: fit-content;
-      background: #cccccc41;
-      color: white;
-      font-size: 25px;
-      border: none;
-    }
-}
