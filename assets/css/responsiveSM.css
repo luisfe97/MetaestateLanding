@@ -1,12 +1,13 @@
 @media (max-width: 768px) {
   header{
     height: 150px !important;
-    margin-bottom: 10% !important;
+    
 
   }
     header img {
         width: 250px !important;
         height: 80px !important;
+        margin-bottom: 10% !important;
       }
       header .boton {
         margin-top: 0px;
