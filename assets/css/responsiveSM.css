@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     header img {
         width: 200px !important;
-        height: fit-content;
+        height: 100px !important;
       }
       header .boton {
         margin-top: 0px;
