@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TPCamila Campo</title>
+        <style>
+            body { margin: 0; }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+         <script src="OrbitControls.js"></script>
+      
+        <script>
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight, 0.1,1000);
+            const renderer = new THREE.WebGLRenderer();
+            camera.position.set(10,0,0)
+            
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+            const controls = new THREE.OrbitControls(camera, renderer.domElement)
+            // const ambientlight = new THREE.AmbientLight(0xF6CED8);         
+            // scene.add(ambientlight)
+
+            //figuras
+            const geometry = new THREE.BoxGeometry(1);
+            const material = new THREE.MeshBasicMaterial({color: 0x0000ff  });
+            const sol = new THREE.Mesh(geometry, material);
+            scene.add(sol)
+            sol.name="unito"
+
+            const geometry2 = new THREE.BoxGeometry(1);
+            const material2 = new THREE.MeshBasicMaterial({color: 0x0000ff  });
+            const sol2 = new THREE.Mesh(geometry2, material2);
+            scene.add(sol2)
+            sol2.name="dos"
+            
+            const geometry3 = new THREE.BoxGeometry(1);
+            const material3 = new THREE.MeshBasicMaterial({color: 0x0000ff  });
+            const sol3 = new THREE.Mesh(geometry3, material3);
+            scene.add(sol3)
+            sol3.name="tres"
+           
+            //p fija 
+            sol.position.x=-5
+            sol2.position.x=5
+            sol3.position.x=0
+
+   
+            //guia 
+            const raycaster = new THREE.Raycaster();
+            
+            //respecto al mouse 
+            const mouse = new THREE.Vector2();
+
+            
+            let tpactivado  = ""
+
+			const animate = function () {
+
+				requestAnimationFrame( animate )
+
+            raycaster.setFromCamera( mouse, camera )
+
+            const intersects = raycaster.intersectObjects( scene.children );
+
+           
+
+            if(intersects.length>0){
+
+                
+                // console.log(intersects[0].object.name)
+                
+                if(intersects[0].object.name=="unito" && tpactivado !="unito" && intersects[0].distance<3){
+                    tpactivado = "unito"
+                    intersects[0].object.material.color.set(0xff0000)
+                    camera.position.x = intersects[0].object.position.x 
+                    camera.position.y = intersects[0].object.position.y +5
+                    camera.position.z = intersects[0].object.position.z
+                    sol2.material.color.set(0x0000ff)
+                    sol3.material.color.set(0x0000ff)
+                }
+
+                if(intersects[0].object.name=="dos" && tpactivado !="dos" && intersects[0].distance<3){
+                    tpactivado = "dos"
+                    intersects[0].object.material= new THREE.MeshBasicMaterial({color: 0xff0000  })
+                    camera.position.x = intersects[0].object.position.x 
+                    camera.position.y = intersects[0].object.position.y +5
+                    camera.position.z = intersects[0].object.position.z
+                    sol.material.color.set(0x0000ff)
+                    sol3.material.color.set(0x0000ff)
+                    
+                }
+                if(intersects[0].object.name=="tres" && tpactivado !="tres" && intersects[0].distance<3){
+                    tpactivado = "tres"
+                    intersects[0].object.material.color.set(0xff0000)
+                    camera.position.x = intersects[0].object.position.x 
+                    camera.position.y = intersects[0].object.position.y +5
+                    camera.position.z = intersects[0].object.position.z
+                    sol.material.color.set(0x0000ff)
+                    sol2.material.color.set(0x0000ff)
+                }
+            }
+              
+               
+                controls.update()
+                
+
+                renderer.render( scene, camera);
+            
+            }
+            animate()
+
+     
+			</script>
+	</body>
+    
+</html>

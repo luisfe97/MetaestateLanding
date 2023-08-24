@@ -1,0 +1,68 @@
+function onMouseMove( event ) {
+
+	     // calculate mouse position in normalized device coordinates
+	     // (-1 to +1) for both components
+
+	     mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	     mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;   
+
+         if(event.clientX<200)
+         {
+             camera.rotation.y +=0.1;
+             console.log(event.clientX);
+         }
+
+         if(event.clientX<200)
+         {
+             camera.rotation.y -=0.1;
+             console.log(event.clientX);
+         }
+
+        }
+       
+
+     //animacion
+     const animate = function () {
+         requestAnimationFrame( animate );
+         //controls.update();
+
+         // update the picking ray with the camera and mouse position
+	     raycaster.setFromCamera( mouse, camera );
+
+         // calculate objects intersecting the picking ray
+         const intersects = raycaster.intersectObjects( scene.children, true );
+         if (intersects.length>0 ) 
+            {
+                console.log(intersects[0].object.name);
+                if(intersects[0].object.name == "T1")
+               {
+                 intersects[0].object.material.color.set(0xff0000);
+                 camera.position.x = intersects[0].object.position.x -5
+                 camera.position.y = intersects[0].object.position.y +10
+                 camera.position.z = intersects[0].object.position.z  +25
+               }
+
+               if(intersects[0].object.name == "T2")
+               {
+                 intersects[0].object.material.color.set(0xff0000);
+                 camera.position.x = intersects[0].object.position.x -5
+                 camera.position.y = intersects[0].object.position.y +10
+                 camera.position.z = intersects[0].object.position.z  +25
+               }
+
+               if(intersects[0].object.name == "T3")
+               {
+                 intersects[0].object.material.color.set(0xff0000);
+                 camera.position.x = intersects[0].object.position.x -5
+                 camera.position.y = intersects[0].object.position.y +10
+                 camera.position.z = intersects[0].object.position.z  +25
+               }
+            }
+            
+            renderer.render( scene, camera );
+        };
+
+        window.addEventListener( 'mousemove', onMouseMove, false );
+        //window.requestAnimationFrame(render);
+
+        animate();
